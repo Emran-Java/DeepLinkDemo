@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bo.deeplinkdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--AppLink-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--https://www.pexels.com-->
+                <data
+                    android:host="www.pexels.com"
+                    android:pathPattern="/@md-emran-hossain-emran-11822"
+                    android:scheme="https" />
+
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".DemoLink1Activity" />
+        <activity
+            android:name=".DemoLink2Activity"
+            android:label="@string/title_activity_demo_link2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DemoLink3Activity"
+            android:label="@string/title_activity_demo_link3"></activity>
+    </application>
+
+</manifest>
