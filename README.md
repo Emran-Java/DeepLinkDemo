@@ -90,10 +90,13 @@ For open <b>DemoLink2Activity.java</b><br>
 </html>
 </p>
 <h3><a href="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/media/deep_link.mp4" target="_blank">Demo video</a></h3>
+<a href="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/media/deep_link.gif" target="_blank">
+  <img src="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/media/deep_link.gif" alt="Demo video gif" style="max-width:100%;">
+</a>
+
 <h3><a href="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/apk/deep-linkapp-debug-20190515.apk" target="_blank">Demo app APK file</a></h3>
 <br>
-<br>
-<h2>____________________________________________</h2>
+_________________________________________________
 
 <h4>Android project instruction</h>
 
