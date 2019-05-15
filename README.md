@@ -37,7 +37,60 @@ uapp://yrhost.com/target_another_activity
   <img src="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/screenshot/backend_files.png" alt="backendScreenshot" style="max-width:100%;"/>
 
 </p>
-
+<br>
 For open <b>DemoLink2Activity.java</b><br>
+<img src="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/screenshot/web_url_two.png" alt="webUrlTwo" style="max-width:100%;"/>
+<br>
+<p>
+  <html>
+	<head>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+    <script>
+
+             $( window ).on( "load", function() {
+               window.location.replace("uapp://yrhost.com/target_activity");
+               setTimeout(function () {
+				   //your app link to redirect play store
+                   window.location.replace("https://play.google.com/store/apps/details?id=com.lintree.emran.lintree");
+               }, 2000);
+               
+           });
+        </script>
+    </body>
+	
+</html>
+
+</p>
+<br>
+For open <b>DemoLink2Activity.java</b><br>
+<img src="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/screenshot/web_url_two.png" alt="webUrlTwo" style="max-width:100%;"/>
+<br>
+<p>
+  <html>
+	<head>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+    <script>
+
+            $( window ).on( "load", function() {
+               window.location.replace("uapp://yrhost.com/target_another_activity");
+               setTimeout(function () {
+				   //your app link to redirect play store
+                   window.location.replace("https://play.google.com/store/apps/details?id=com.lintree.emran.lintree");
+               }, 2000);
+               
+           });
+        </script>
+    </body>
+    
+</html>
+
+</p>
+<br>
 
 
