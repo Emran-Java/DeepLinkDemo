@@ -34,10 +34,9 @@ uapp://yrhost.com/target_another_activity
                 * */
   But those links are not true link. So we need to add script in our web site, 
   For testimg we use LAMPP server 
-  <img src="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/screenshot/link_0ne.jpg" alt="Demo Screenshot 1" style="max-width:100%;"/>
+  <img src="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/screenshot/backend_files.png" alt="backendScreenshot" style="max-width:100%;"/>
 
 </p>
-
 
 For open <b>DemoLink2Activity.java</b><br>
 
