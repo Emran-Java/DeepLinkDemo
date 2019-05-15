@@ -40,7 +40,6 @@ uapp://yrhost.com/target_another_activity
 <br>
 For open <b>DemoLink2Activity.java</b><br>
 <img src="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/screenshot/web_url_two.png" alt="webUrlTwo" style="max-width:100%;"/>
-<br>
 <p>
   <html>
 	<head>
@@ -67,7 +66,6 @@ For open <b>DemoLink2Activity.java</b><br>
 <br>
 For open <b>DemoLink2Activity.java</b><br>
 <img src="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/screenshot/web_url_two.png" alt="webUrlTwo" style="max-width:100%;"/>
-<br>
 <p>
   <html>
 	<head>
@@ -89,8 +87,7 @@ For open <b>DemoLink2Activity.java</b><br>
     </body>
     
 </html>
-
 </p>
+<h3><a href="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/media/deep_link.mp4" target="_blank">Demo video</a></h3>
+<h3><a href="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/apk/deep-linkapp-debug-20190515.apk" target="_blank">Demo app APK file</a></h3>
 <br>
-
-
