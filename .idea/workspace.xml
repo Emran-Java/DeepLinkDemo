@@ -11,7 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdda2b9b-1e94-4b84-ba70-68b73be49154" name="Default" comment="" />
+    <list default="true" id="bdda2b9b-1e94-4b84-ba70-68b73be49154" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/files/media/deep_link.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,12 +62,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DemoLink2Activity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DemoLink2Activity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bo/deeplinkdemo/DemoLink2Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="361">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1397" />
           </provider>
         </entry>
       </file>
@@ -2364,7 +2374,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -2447,9 +2457,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/files/media" />
+      <recent name="$PROJECT_DIR$/files/screenshot" />
       <recent name="$PROJECT_DIR$/files/web_files" />
       <recent name="$PROJECT_DIR$/files/apk" />
-      <recent name="$PROJECT_DIR$/files/screenshot" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2603,12 +2613,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557909874572</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- add web files screenshot">
+      <created>1557910251335</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557910251335</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1926" height="1083" extended-state="7" />
-    <editor active="true" />
+    <frame x="-3" y="0" width="1926" height="1083" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -2618,13 +2634,13 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32983193" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32983193" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32983193" />
       <window_info anchor="bottom" id="Logcat" order="7" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32948583" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2649,7 +2665,8 @@
     <MESSAGE value="-add screen shot" />
     <MESSAGE value="- add debug test apk" />
     <MESSAGE value="- add web files &#10;- add video" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add web files &#10;- add video" />
+    <MESSAGE value="- add web files screenshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add web files screenshot" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -2690,9 +2707,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bo/deeplinkdemo/DemoLink2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="361">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1397" />
       </provider>
     </entry>
   </component>
