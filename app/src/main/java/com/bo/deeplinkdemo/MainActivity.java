@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     intObj = new Intent(mContext , DemoLink2Activity.class);
                 }
                 else if(intentData.equalsIgnoreCase("uapp://yrhost.com/target_another_activity")){
-                    intObj = new Intent(mContext , DemoLink2Activity.class);
+                    intObj = new Intent(mContext , DemoLink3Activity.class);
                 }
 
                 if(intObj!=null)

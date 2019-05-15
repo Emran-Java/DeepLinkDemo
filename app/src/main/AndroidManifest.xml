@@ -30,15 +30,46 @@
 
             </intent-filter>
 
+            <!--DeepLink-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--https://www.pexels.com-->
+                <data
+                    android:host="yrhost.com"
+                    android:pathPattern="/target_activity"
+                    android:scheme="uapp" />
+
+            </intent-filter>
+
+
+            <!--DeepLink-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--https://www.pexels.com-->
+                <data
+                    android:host="yrhost.com"
+                    android:pathPattern="/target_another_activity"
+                    android:scheme="uapp" />
+
+            </intent-filter>
+
         </activity>
         <activity android:name=".DemoLink1Activity" />
+
         <activity
             android:name=".DemoLink2Activity"
             android:label="@string/title_activity_demo_link2"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".DemoLink3Activity"
-            android:label="@string/title_activity_demo_link3"></activity>
+            android:label="@string/title_activity_demo_link3"/>
     </application>
 
 </manifest>
