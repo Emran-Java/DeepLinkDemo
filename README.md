@@ -11,7 +11,11 @@ When a clicked link or programmatic request invokes a web URI intent, the Androi
 1. Open the user's preferred app that can handle the URI, if one is designated.
 2. Open the only available app that can handle the URI.
 3. Allow the user to select an app from a dialog.
-
+# <a href="https://youtu.be/wwzkhRDJfCg" target="_blank">Video tutorial</a>
+<a href="https://youtu.be/wwzkhRDJfCg" target="_blank"><img src="https://i.ytimg.com/vi/wwzkhRDJfCg/maxresdefault.jpg" alt="Demo Screenshot 1" style="max-width:100%;"/>
+	</a>
+	<br>
+https://i.ytimg.com/vi/wwzkhRDJfCg/maxresdefault.jpg
 <h4>Android project instruction</h4>
 <br>Step 0: Create a android project and select language Java
 <br>Step 1: Create 3 Activity 
