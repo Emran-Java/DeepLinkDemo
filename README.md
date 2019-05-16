@@ -13,15 +13,15 @@ When a clicked link or programmatic request invokes a web URI intent, the Androi
 3. Allow the user to select an app from a dialog.
 
 <h4>Android project instruction</h>
-Step 0: Create a android project and select language Java
-Step 1: Create 3 Activity 
-	- MainActivity
-	- DemoLink2Activity
-	- DemoLink3Activity
-Step 2: 
+<br>Step 0: Create a android project and select language Java
+<br>Step 1: Create 3 Activity 
+<br>	- MainActivity
+<br>	- DemoLink2Activity
+<br>	- DemoLink3Activity
+<br>Step 2: 
 _________________________________________________
 <h4>Backend setup</h>
-For example we use 3 web Url
+<br>For example we use 3 web Url
 
 <h3><a href="https://www.pexels.com/@md-emran-hossain-emran-11822" target="_blank">Web Url One</a></h3>
 https://www.pexels.com/@md-emran-hossain-emran-11822
