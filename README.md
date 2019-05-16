@@ -15,7 +15,7 @@ When a clicked link or programmatic request invokes a web URI intent, the Androi
 <h4>Android project instruction</h4>
 <br>Step 0: Create a android project and select language Java
 <br>Step 1: Create 3 Activity 
-<br>- MainActivity
+<br>- DemoLink1Activity
 <br>- DemoLink2Activity
 <br>- DemoLink3Activity
 <br>Step 2: Add intent-filter in AndroidManifest.xml in luncher activity area
