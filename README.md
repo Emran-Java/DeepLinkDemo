@@ -13,13 +13,153 @@ When a clicked link or programmatic request invokes a web URI intent, the Androi
 3. Allow the user to select an app from a dialog.
 
 <h4>Android project instruction</h4>
-
-Step 0: Create a android project and select language Java
-Step 1: Create 3 Activity 
+<br>Step 0: Create a android project and select language Java
+<br>Step 1: Create 3 Activity 
 <br>- MainActivity
 <br>- DemoLink2Activity
 <br>- DemoLink3Activity
-Step 2: 
+<br>Step 2: Add intent-filter in AndroidManifest.xml in luncher activity area
+<br>
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bo.deeplinkdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--AppLink-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--https://www.pexels.com-->
+                <data
+                    android:host="www.pexels.com"
+                    android:pathPattern="/@md-emran-hossain-emran-11822"
+                    android:scheme="https" />
+
+            </intent-filter>
+
+            <!--DeepLink-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--https://www.pexels.com-->
+                <data
+                    android:host="yrhost.com"
+                    android:pathPattern="/target_activity"
+                    android:scheme="uapp" />
+
+            </intent-filter>
+
+
+            <!--DeepLink-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--https://www.pexels.com-->
+                <data
+                    android:host="yrhost.com"
+                    android:pathPattern="/target_another_activity"
+                    android:scheme="uapp" />
+
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".DemoLink1Activity" />
+
+        <activity
+            android:name=".DemoLink2Activity"
+            android:label="@string/title_activity_demo_link2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".DemoLink3Activity"
+            android:label="@string/title_activity_demo_link3"/>
+    </application>
+
+</manifest>
+<br>
+Include the BROWSABLE category. It is required in order for the intent filter to be accessible from a web browser. Without it, clicking a link in a browser cannot resolve to your app.
+Also include the DEFAULT category. This allows your app to respond to implicit intents. Without this, the activity can be started only if the intent specifies your app component name.
+<br>Strp 3: Read data from incoming intents (<a herf="https://developer.android.com/training/app-links/deep-linking#java" target="_blank">More</a>)
+<br>
+<br>package com.bo.deeplinkdemo;
+<br>
+<br>import android.content.Context;
+<br>import android.content.Intent;
+<br>import android.support.v7.app.AppCompatActivity;
+<br>import android.os.Bundle;
+<br>import android.util.Log;
+<br>
+<br>public class MainActivity extends AppCompatActivity {
+
+    private Context mContext;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mContext = this;
+        deepLinkSwitcher();
+    }
+
+    private void deepLinkSwitcher() {
+        Intent intent = getIntent();
+        if (intent != null && intent.getData() != null) {
+            String intentData = intent.getData().toString();
+            Log.d("deepData", "" + intentData);
+            if (intentData != null && !intentData.isEmpty()) {
+
+                /*
+                Here
+                SCHEME = https
+                HOST = www.pexels.com
+                PATH PATTERN = /@md-emran-hossain-emran-11822
+                * */
+                Intent intObj=null;
+                if (intentData.equalsIgnoreCase("https://www.pexels.com/@md-emran-hossain-emran-11822")) {
+                    intObj = new Intent(mContext , DemoLink1Activity.class);
+                }
+
+                /*
+                Here
+                SCHEME = uapp
+                HOST = yrhost.com
+                PATH PATTERN = /target_activity
+                * */
+                else if(intentData.equalsIgnoreCase("uapp://yrhost.com/target_activity")){
+                    intObj = new Intent(mContext , DemoLink2Activity.class);
+                }
+                else if(intentData.equalsIgnoreCase("uapp://yrhost.com/target_another_activity")){
+                    intObj = new Intent(mContext , DemoLink3Activity.class);
+                }
+
+                if(intObj!=null)
+                    startActivity(intObj);
+            }
+        }
+    }//end function
+<br>}
+
+
+
 _________________________________________________
 <h4>Backend setup</h>
 <br>For example we use 3 web Url
