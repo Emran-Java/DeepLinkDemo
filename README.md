@@ -1,6 +1,26 @@
 # DeepLinkDemo
-Android deep link demo project 
+Android deep link demo project
+# What is deep link in Android area?
+Deep link is technique to use in android for filter and open target activity by click web link.
 
+In general think Deep linking (<a href="https://en.wikipedia.org/wiki/Deep_linking" target="_blank">wikipedia</a>)
+In the context of the World Wide Web, deep linking is the use of a hyperlink that links to a specific, generally searchable or indexed, piece of web content on a website (e.g. "http://example.com/path/page"), rather than the website's home page (e.g., "http://example.com"). The URL contains all the information needed to point to a particular item, in this case the "Example" section of the English Wikipedia article entitled "Deep linking", as opposed to only the information needed to point to the highest-level home page of Wikipedia at https://www.wikipedia.org/.
+
+Must learn, "Create Deep Links to App Content" (<a herf="https://developer.android.com/training/app-links/deep-linking" target="_blank">Android Developer</a>)
+When a clicked link or programmatic request invokes a web URI intent, the Android system tries each of the following actions, in sequential order, until the request succeeds:
+1. Open the user's preferred app that can handle the URI, if one is designated.
+2. Open the only available app that can handle the URI.
+3. Allow the user to select an app from a dialog.
+
+<h4>Android project instruction</h>
+Step 0: Create a android project and select language Java
+Step 1: Create 3 Activity 
+	- MainActivity
+	- DemoLink2Activity
+	- DemoLink3Activity
+Step 2: 
+_________________________________________________
+<h4>Backend setup</h>
 For example we use 3 web Url
 
 <h3><a href="https://www.pexels.com/@md-emran-hossain-emran-11822" target="_blank">Web Url One</a></h3>
@@ -96,7 +116,4 @@ For open <b>DemoLink2Activity.java</b><br>
 
 <h3><a href="https://github.com/Emran-Java/DeepLinkDemo/blob/master/files/apk/deep-linkapp-debug-20190515.apk" target="_blank">Demo app APK file</a></h3>
 <br>
-_________________________________________________
-
-<h4>Android project instruction</h>
 
