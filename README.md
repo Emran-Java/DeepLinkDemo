@@ -98,8 +98,9 @@ When a clicked link or programmatic request invokes a web URI intent, the Androi
 <br>
 Include the BROWSABLE category. It is required in order for the intent filter to be accessible from a web browser. Without it, clicking a link in a browser cannot resolve to your app.
 Also include the DEFAULT category. This allows your app to respond to implicit intents. Without this, the activity can be started only if the intent specifies your app component name.
+
 <br>Strp 3: Read data from incoming intents (<a herf="https://developer.android.com/training/app-links/deep-linking#java" target="_blank">More</a>)
-<br>
+
 <br>package com.bo.deeplinkdemo;
 <br>
 <br>import android.content.Context;
